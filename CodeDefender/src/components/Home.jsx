@@ -6,7 +6,7 @@ import bg1 from '../assets/bg1.jpg';
 import bg2 from '../assets/bg2.jpg';
 import bg5 from '../assets/bg5.jpg';
 import Footer from './Footer';
-
+import Navbar from './Navbar';
 const images = [bg1, bg2, bg5];
 const slideInterval = 1000; // Change slide every 3 seconds
 
@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <div className='relative'>
-      
+      <Navbar/>
       <div
         className="full-screen-container"
         style={{

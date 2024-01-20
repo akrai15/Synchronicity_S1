@@ -10,7 +10,7 @@ import a3 from '../assets/Oh-no-sound-effect.mp3';
 // * 3 playerCards per scenario
 
 const Game = () => {
-var scenarios = [
+let scenarios = [
     {
       hackerCard : {
         description : "I set up a fake Wi-Fi station to steal people’s email and track them online.",
@@ -172,6 +172,89 @@ var scenarios = [
           power : 1,
         }
       ]
+    },
+    {
+      hackerCard: {
+        description: "I gained access to your online accounts by exploiting weak security questions.",
+        power: 3,
+      },
+      playerCards: [
+        {
+          description: "I use strong and unique security questions for all my accounts.",
+          power: 5,
+        },
+        {
+          description: "I avoid using security questions and opt for other authentication methods.",
+          power: 4,
+        },
+        {
+          description: "I use the same simple security questions for all my accounts.",
+          power: 1,
+        },
+      ],
+    },
+  
+    {
+      hackerCard: {
+        description: "I installed a keylogger on your computer to capture everything you type.",
+        power: 2,
+      },
+      playerCards: [
+        {
+          description: "I regularly scan my computer for malware and use anti-keylogger software.",
+          power: 4,
+        },
+        {
+          description: "I don't worry about keyloggers, my passwords are easy to remember anyway.",
+          power: 3,
+        },
+        {
+          description: "I never thought about keyloggers, they sound like something from a spy movie.",
+          power: 1,
+        },
+      ],
+    },
+  
+    {
+      hackerCard: {
+        description: "I intercepted your unsecured Bluetooth connection and accessed your device.",
+        power: 3,
+      },
+      playerCards: [
+        {
+          description: "I always turn off Bluetooth when not in use.",
+          power: 5,
+        },
+        {
+          description: "I use secure Bluetooth connections and regularly update my devices.",
+          power: 4,
+        },
+        {
+          description: "I leave Bluetooth on all the time for convenience.",
+          power: 1,
+        },
+      ],
+    },
+  
+    {
+      hackerCard: {
+        description: "I manipulated your DNS settings to redirect you to fake websites.",
+        power: 2,
+      },
+      playerCards: [
+        {
+          description: "I use a reputable DNS service and have DNSSEC enabled.",
+          power: 4,
+        },
+        {
+          description: "I never thought about DNS settings; I use the default ones from my ISP.",
+          power: 3,
+        },
+        {
+          description: "I'm not sure what DNS is, but everything seems to work fine.",
+          power: 1,
+        },
+      ],
     }
   ];
   let audioObj = null;

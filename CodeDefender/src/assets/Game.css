@@ -45,7 +45,7 @@
   }
   
   .player-card .power {
-	background-image: url(images/shield.svg);
+	background-image: url(./shield.svg);
   }
   
   /* Hacker Styles */
@@ -59,7 +59,7 @@
   }
   
   .hacker-card .power {
-	background-image: url(images/skull.svg);
+	background-image: url(./skull.svg);
   }
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
   

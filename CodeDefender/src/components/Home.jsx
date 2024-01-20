@@ -36,7 +36,7 @@ function Home() {
         }}
       >
         <div className="text-center text-dark full-screen-content">
-          <h2 className="text-4xl font-bold mb-4">Sense Hacker</h2>
+          <h2 className="text-4xl font-bold mb-4">Welcome to Hacker's World</h2>
           <Link to="/game">
             <button className="sexy-button">Play Now</button>
           </Link>

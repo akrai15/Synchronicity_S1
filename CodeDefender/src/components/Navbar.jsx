@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import logo1 from '../assets/logo1.jpg';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,27 +9,33 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo or Game Title */}
-        <span className="text-white text-lg font-bold">Your Game</span>
+
+        {/* Logo or Game Title with rounded logo */}
+        <div className="flex items-center">
+          <img
+            src={logo1}  // Replace with the URL of your logo image
+            alt="Logo"
+            className="rounded-full w-10 h-10 mr-2"
+          />
+          <span className='bg-gradient-to-b from-[#FF512F] to-[#F09819] bg-clip-text font-[15px] font-bold text-transparent  text-transparent' >
+        Code Defender
+      </span>
+        </div>
 
         {/* Navigation Links */}
         <div className="hidden lg:flex space-x-4">
-        <Link to='/'>
-    <a>Home</a>
-  </Link>
-  <Link to='/about'>
-    <a>About</a>
-  </Link>
-  <Link to='/future'>
-    <a>Future Goals</a>
-  </Link>
+          <Link to='/'>
+            <a>Home</a>
+          </Link>
+          <Link to='/about'>
+            <a>About</a>
+          </Link>
+          <Link to='/future'>
+            <a>Future Goals</a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -46,17 +52,16 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden absolute top-16 right-0 bg-gray-800 p-4">
-  <Link to='/'>
-    <a>Home</a>
-  </Link>
-  <Link to='/about'>
-    <a>About</a>
-  </Link>
-  <Link to='/future'>
-    <a>Future Goals</a>
-  </Link>
-</div>
-
+            <Link to='/'>
+              <a>Home</a>
+            </Link>
+            <Link to='/about'>
+              <a>About</a>
+            </Link>
+            <Link to='/future'>
+              <a>Future Goals</a>
+            </Link>
+          </div>
         )}
       </div>
     </nav>
@@ -64,4 +69,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

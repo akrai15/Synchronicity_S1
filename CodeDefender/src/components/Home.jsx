@@ -71,7 +71,7 @@ import '../assets/btn.css';
 import Scriptanime from './Scriptanime';
 
 const images = [bg1, bg2, bg5];
-const slideInterval = 1000; // Change slide every 3 seconds
+const slideInterval = 2000; // Change slide every 3 seconds
 
 function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

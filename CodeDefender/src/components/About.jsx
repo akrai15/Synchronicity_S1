@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import imgo from '../assets/img1.jpg';
+import imgo from '../assets/about1.jpg';
 import imgt from '../assets/img2.jpg';
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
     <div className="flex flex-col max-h-screen overflow-y-auto">
       <Navbar />
 
-      <div className="flex-1 bg-blue-500 p-10">
+      <div className="flex-1 bg-indigo-500 p-10">
         {/* Section 1: Introduction */}
         <div className="text-center mb-10 font-bold text-5xl text-white">
           About Sense Hacker
@@ -30,6 +30,12 @@ const About = () => {
           <div className="md:w-1/2 text-white font-medium">
             <p className="mb-6">
               The story of the project is fascinating. An anonymous hacker is targeting you 😱. Face his attacks with three options. Choose the correct one to make the hacker lose points 🙌, or become a victim otherwise.
+              Develop and expand a diverse range of age-appropriate content suitable for different age groups within the small children category.
+        Create engaging games and activities that align with various educational levels and cognitive abilities.
+        Introduce interactive learning modules that cover a broad spectrum of subjects such as basic mathematics, language skills, science, and critical thinking.
+        Incorporate storytelling elements to make learning more engaging and memorable for young minds.
+
+
             </p>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaPinterest } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -15,24 +15,32 @@ const Footer = () => {
       
       <div className='flex flex-row gap-x-5 items-center text-[24px]'>
         <div className='hover:text-red-600'>
-          <FaPinterest />
+        <a href="https://github.com/akrai15" target="_blank">
+          <FaGithub/>
+          </a>
         </div>
 
         <div className='hover:text-blue-600'>
-          <FaTwitter />
+        <a href="https://twitter.com/AyushRai379667?t=znl8zMrYr0dwRD4yhErA2w&s=08" target="_blank">
+          <FaTwitter/>
+          </a>
         </div>
 
         <div className='hover:text-[#f2a60c]'>
+        <a href="mailto:raiayush572@gmail.com" className='hover:text-[#f2a60c]' target='_blank'>
           <BiLogoGmail />
+        </a>
         </div>
 
         <div className='hover:text-blue-500'>
-          <FaFacebook />
+        <a href="https://www.linkedin.com/in/ayush-kumar-rai-80a1a6261/" target="_blank">
+          <FaLinkedin />
+          </a>
         </div>
       </div>
 
       <div className="text-[#555]">
-        <p>2024 Sense Hacker. All rights reserved.</p>
+        <p>2024 Code Defender. All rights reserved.</p>
       </div>
 
     </div>

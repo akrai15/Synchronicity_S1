@@ -5,9 +5,7 @@ import '../assets/Game.css';
 import a1 from '../assets/sound.mp3';
 import a2 from '../assets/evil-laugh.mp3';
 import a3 from '../assets/Oh-no-sound-effect.mp3';
-// You can add new scenarios, but make sure that there is exactly...
-// * 1 hackerCard per scenario
-// * 3 playerCards per scenario
+
 
 const Game = () => {
 let scenarios = [
@@ -287,14 +285,14 @@ const updateScores = () => {
   const playerLifeBar = document.querySelector(".player-stats .life-left");
   const hackerLifeBar = document.querySelector(".hacker-stats .life-left");
 
-  // Update life totals
+
   const updatedPlayerLife = Math.max(playerLife, 0);
   const updatedHackerLife = Math.max(hackerLife, 0);
 
   playerLifeElement.innerHTML = updatedPlayerLife;
   hackerLifeElement.innerHTML = updatedHackerLife;
 
-  // Calculate and update life bar heights
+
   const updateLifeBar = (element, life) => {
     const percentage = (life / maxLife) * 100;
     element.style.height = percentage < 0 ? 0 : percentage + "%";
@@ -318,7 +316,7 @@ const updateScores = () => {
       setTimeout(() => {
         document.querySelector("button.next-turn").removeAttribute("disabled");
       }, 500);
-      // Delay to allow visual effects before enabling the next turn button
+
     }
   }, [playerLife, hackerLife]);
 
@@ -452,7 +450,7 @@ const updateScores = () => {
     
     setTimeout(() => {
       startGame();
-    }, 500); // Delay before starting a new game to allow visual effects
+    }, 500); 
   };
   
   const playTurn = () => {

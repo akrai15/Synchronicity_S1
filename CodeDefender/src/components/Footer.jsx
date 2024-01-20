@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="bg-[#001f3f] text-white absolute bottom-0 w-full flex flex-row justify-between items-center p-4">
       
       <div className='bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] 
-        bg-clip-text text-4xl font-semibold flex items-center'>
+        bg-clip-text text-4xl font-medium flex items-center text-transparent' >
         Contact Us
       </div>
       

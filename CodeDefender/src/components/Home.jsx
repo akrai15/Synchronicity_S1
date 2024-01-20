@@ -65,12 +65,14 @@ import { Link } from 'react-router-dom';
 import bg1 from '../assets/bg1.jpg';
 import bg2 from '../assets/bg2.jpg';
 import bg5 from '../assets/bg5.jpg';
+import bg7 from '../assets/bg7.jpg';
+
 import Footer from './Footer';
 import Navbar from './Navbar';
 import '../assets/btn.css';
 import Scriptanime from './Scriptanime';
 
-const images = [bg1, bg2, bg5];
+const images = [bg1, bg2, bg5,bg7];
 const slideInterval = 2000; // Change slide every 3 seconds
 
 function Home() {

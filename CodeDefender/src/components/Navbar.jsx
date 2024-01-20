@@ -33,8 +33,8 @@ const Navbar = () => {
           <Link to='/about'>
             <a>About</a>
           </Link>
-          <Link to='/future'>
-            <a>Future Goals</a>
+          <Link to='/game'>
+            <a>Play Now</a>
           </Link>
         </div>
 
@@ -58,8 +58,8 @@ const Navbar = () => {
             <Link to='/about'>
               <a>About</a>
             </Link>
-            <Link to='/future'>
-              <a>Future Goals</a>
+            <Link to='/game'>
+              <a>Play Now</a>
             </Link>
           </div>
         )}

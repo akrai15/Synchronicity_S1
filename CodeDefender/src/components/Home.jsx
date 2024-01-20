@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import bg1 from '../assets/bg1.jpg';
 import bg2 from '../assets/bg2.jpg';
 import bg5 from '../assets/bg5.jpg';
+import bg6 from '../assets/bg6.jpg';
 import Footer from './Footer';
 import Navbar from './Navbar';
-const images = [bg1, bg2, bg5];
+import '../assets/btn.css';
+const images = [bg1, bg2, bg5,bg6];
 const slideInterval = 1000; // Change slide every 3 seconds
 
 function Home() {
@@ -35,12 +37,14 @@ function Home() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="text-center text-dark full-screen-content">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Hacker's World</h2>
-          <Link to="/game">
-            <button className="sexy-button">Play Now</button>
-          </Link>
-        </div>
+         <div className="text-center items-center justify-center text-dark full-screen-content h-screen flex flex-col">
+      <h2 className="text-4xl font-bold mb-4 ">Welcome to Hacker's World</h2>
+      <Link to="/game">
+        
+          <a className="btn block mr-5">Start Game</a>
+        
+      </Link>
+    </div>
       </div>
       <Footer />
       </div>
